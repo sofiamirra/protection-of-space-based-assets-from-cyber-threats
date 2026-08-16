@@ -1,0 +1,44 @@
+{
+  "security_controls": [
+    {
+      "id": "C1",
+      "name": "Zero Trust Architecture & PSNC Asset Auditing",
+      "description": "Implementation of strict identity verification and continuous monitoring as mandated by PSNC Annex B to prevent unauthorized lateral movement.",
+      "applicable_threats": ["unauthorized remote access"],
+      "likelihood_reduction": 3,
+      "impact_reduction": 0
+    },
+    {
+      "id": "C2",
+      "name": "Human Factors Engineering & Telemetry Cross-Referencing",
+      "description": "Training operators to cross-reference physical anomalies with flight telemetry to mitigate the impact of analog spoofing.",
+      "applicable_threats": ["analog sensor spoofing"],
+      "likelihood_reduction": 1,
+      "impact_reduction": 2
+    },
+    {
+      "id": "C3",
+      "name": "Cryptographic Authentication & Privacy by Design",
+      "description": "Implementation of Edge Computing and cryptographic authentication to prevent unauthenticated memory access and protect data sovereignty.",
+      "applicable_threats": ["lateral memory manipulation"],
+      "likelihood_reduction": 3,
+      "impact_reduction": 0
+    },
+    {
+      "id": "C4",
+      "name": "Mandatory CVCN Hardware Screening & rigorous SCRM",
+      "description": "State-mandated hardware screening to detect supply chain backdoors before launch.",
+      "applicable_threats": ["supply chain backdoor"],
+      "likelihood_reduction": 2,
+      "impact_reduction": 1
+    },
+    {
+      "id": "C5",
+      "name": "GDPR Art. 32 Resilience & PSNC Penetration Testing",
+      "description": "Regular penetration testing and resilience measures on the space-to-ground link to prevent replay attacks.",
+      "applicable_threats": ["command injection and replay attacks"],
+      "likelihood_reduction": 2,
+      "impact_reduction": 2
+    }
+  ]
+}

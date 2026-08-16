@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "total_scenarios": 5,
+    "acceptable_scenarios": 1,
+    "not_acceptable_scenarios": 4,
+    "highest_residual_risk": 20
+  },
+  "risk_results": [
+    {
+      "scenario_id": "S1",
+      "asset_id": "A1",
+      "asset_name": "GNSS Ground Stations",
+      "threat": "unauthorized remote access",
+      "exposure": "Lack of Zero Trust architecture and VPN misconfigurations.",
+      "initial_risk": 20,
+      "deployed_controls": [],
+      "residual_risk": 20,
+      "acceptable_threshold": 4,
+      "status": "not_acceptable",
+      "recommended_controls": [
+        "Zero Trust Architecture & PSNC Asset Auditing"
+      ],
+      "projected_risk_after_recommendation": 5,
+      "treatment_result": "threshold_not_met",
+      "priority": 1
+    },
+    {
+      "scenario_id": "S3",
+      "asset_id": "A3",
+      "asset_name": "Internal Space Buses (SpaceWire)",
+      "threat": "lateral memory manipulation",
+      "exposure": "Unauthenticated lateral memory manipulation (RMAP).",
+      "initial_risk": 20,
+      "deployed_controls": [],
+      "residual_risk": 20,
+      "acceptable_threshold": 5,
+      "status": "not_acceptable",
+      "recommended_controls": [
+        "Cryptographic Authentication & Privacy by Design"
+      ],
+      "projected_risk_after_recommendation": 5,
+      "treatment_result": "threshold_met",
+      "priority": 2
+    },
+    {
+      "scenario_id": "S5",
+      "asset_id": "A5",
+      "asset_name": "TT&C Uplink",
+      "threat": "command injection and replay attacks",
+      "exposure": "Unauthenticated command injection and replay attacks due to legacy hardware constraints.",
+      "initial_risk": 20,
+      "deployed_controls": [],
+      "residual_risk": 20,
+      "acceptable_threshold": 4,
+      "status": "not_acceptable",
+      "recommended_controls": [
+        "GDPR Art. 32 Resilience & PSNC Penetration Testing"
+      ],
+      "projected_risk_after_recommendation": 6,
+      "treatment_result": "threshold_not_met",
+      "priority": 3
+    },
+    {
+      "scenario_id": "S2",
+      "asset_id": "A2",
+      "asset_name": "AOCS & Sensors",
+      "threat": "analog sensor spoofing",
+      "exposure": "Physics-based analog signal spoofing bypassing digital encryption.",
+      "initial_risk": 15,
+      "deployed_controls": [],
+      "residual_risk": 15,
+      "acceptable_threshold": 3,
+      "status": "not_acceptable",
+      "recommended_controls": [
+        "Human Factors Engineering & Telemetry Cross-Referencing"
+      ],
+      "projected_risk_after_recommendation": 6,
+      "treatment_result": "threshold_not_met",
+      "priority": 4
+    },
+    {
+      "scenario_id": "S4",
+      "asset_id": "A4",
+      "asset_name": "COTS Hardware",
+      "threat": "supply chain backdoor",
+      "exposure": "Exploitation of firmware backdoors via opaque supply chains.",
+      "initial_risk": 12,
+      "deployed_controls": [
+        "Mandatory CVCN Hardware Screening & rigorous SCRM"
+      ],
+      "residual_risk": 3,
+      "acceptable_threshold": 6,
+      "status": "acceptable",
+      "recommended_controls": [],
+      "projected_risk_after_recommendation": 3,
+      "treatment_result": "already_acceptable",
+      "priority": 5
+    }
+  ]
+}

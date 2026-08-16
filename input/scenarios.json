@@ -1,0 +1,49 @@
+{
+  "scenarios": [
+    {
+      "id": "S1",
+      "asset_id": "A1",
+      "threat": "unauthorized remote access",
+      "exposure": "Lack of Zero Trust architecture and VPN misconfigurations.",
+      "likelihood": 4,
+      "impact": 5,
+      "deployed_controls": []
+    },
+    {
+      "id": "S2",
+      "asset_id": "A2",
+      "threat": "analog sensor spoofing",
+      "exposure": "Physics-based analog signal spoofing bypassing digital encryption.",
+      "likelihood": 3,
+      "impact": 5,
+      "deployed_controls": []
+    },
+    {
+      "id": "S3",
+      "asset_id": "A3",
+      "threat": "lateral memory manipulation",
+      "exposure": "Unauthenticated lateral memory manipulation (RMAP).",
+      "likelihood": 4,
+      "impact": 5,
+      "deployed_controls": []
+    },
+    {
+      "id": "S4",
+      "asset_id": "A4",
+      "threat": "supply chain backdoor",
+      "exposure": "Exploitation of firmware backdoors via opaque supply chains.",
+      "likelihood": 3,
+      "impact": 4,
+      "deployed_controls": ["C4"]
+    },
+    {
+      "id": "S5",
+      "asset_id": "A5",
+      "threat": "command injection and replay attacks",
+      "exposure": "Unauthenticated command injection and replay attacks due to legacy hardware constraints.",
+      "likelihood": 4,
+      "impact": 5,
+      "deployed_controls": []
+    }
+  ]
+}

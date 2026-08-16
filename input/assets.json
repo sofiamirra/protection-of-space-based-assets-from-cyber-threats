@@ -1,0 +1,44 @@
+{
+  "assets": [
+    {
+      "id": "A1",
+      "name": "GNSS Ground Stations",
+      "type": "ground_segment",
+      "value": 5,
+      "criticality": 5,
+      "risk_threshold": 4
+    },
+    {
+      "id": "A2",
+      "name": "AOCS & Sensors",
+      "type": "spacecraft_subsystem",
+      "value": 5,
+      "criticality": 5,
+      "risk_threshold": 3
+    },
+    {
+      "id": "A3",
+      "name": "Internal Space Buses (SpaceWire)",
+      "type": "onboard_network",
+      "value": 4,
+      "criticality": 5,
+      "risk_threshold": 5
+    },
+    {
+      "id": "A4",
+      "name": "COTS Hardware",
+      "type": "hardware_component",
+      "value": 3,
+      "criticality": 4,
+      "risk_threshold": 6
+    },
+    {
+      "id": "A5",
+      "name": "TT&C Uplink",
+      "type": "communication_link",
+      "value": 5,
+      "criticality": 5,
+      "risk_threshold": 4
+    }
+  ]
+}
